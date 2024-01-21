@@ -15,6 +15,7 @@
     "@remix-run/node": "^2.3.1",
     "@remix-run/react": "^2.3.1",
     "@remix-run/serve": "^2.3.1",
+    "@tinymce/tinymce-react": "^4.3.2",
     "@tiptap/extension-image": "^2.1.13",
     "@tiptap/extension-link": "^2.1.13",
     "@tiptap/pm": "^2.1.13",
@@ -25,7 +26,9 @@
     "lexical": "^0.12.5",
     "react": "^18.2.0",
     "react-cookie": "^6.1.1",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-quill": "^2.0.0",
+    "style-loader": "^3.3.4"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.3.1",

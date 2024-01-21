@@ -22,12 +22,13 @@ export default function Indexes() {
     return(
         <div className="relative top-24">
             {datas.map((data) => 
-            <ul className="mx-4" key={ data.id }>
-                <li className="text-3xl font-mono font-semibold max-lg:font-extrabold uppercase text-center">{ data.title }</li>
-            </ul>)}
-            <ul className="mx-4" key={ datas.id }>
-                <li className="text-3xl font-mono font-semibold max-lg:font-extrabold uppercase text-center">{ datas.title }</li>
-            </ul>
+            <div key={ data.id } class="grid overflow-x-clip grid-cols-8 gap-2 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="/ddkdl">
+                    <img className="rounded-lg" src={ data.thumbnail } alt={ data.title } />
+                </a>
+            </div>
+            )}
+            
         </div>
     )
 }
