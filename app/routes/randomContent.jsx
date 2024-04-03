@@ -4,7 +4,7 @@ import axios from "axios"
 export default function HandleRandomContent() {
     const [randomDatas, setRandomDatas] = useState([])
 
-    const baseURL = 'http://127.0.0.1:8000/randoms/'
+    const baseURL = 'https://wikiodjango.onrender.com/randoms/'
 
     useEffect(() => {
         axios.get(baseURL)

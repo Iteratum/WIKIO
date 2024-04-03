@@ -8,7 +8,7 @@ export default function PageRoute() {
     const pageId = params.id
     ///console.log(pageId)
 
-    const baseURL = 'http://127.0.0.1:8000/get_data/'
+    const baseURL = 'https://wikiodjango.onrender.com/get_data/'
     const URL = baseURL.concat(pageId)
 
     useEffect(() => {

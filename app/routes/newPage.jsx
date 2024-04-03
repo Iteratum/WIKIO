@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import MCEEditor from "../components/MCEEditor"
 import { useRecoilState } from "recoil"
 import { editorContentState } from "../components/store"
@@ -15,7 +15,7 @@ export default function HandleNewPage() {
 
     const [response, setResponse] = useState('')
 
-    const baseURL = 'http://127.0.0.1:8000/newPage/'
+    const baseURL = 'https://wikiodjango.onrender.com/newPage/'
     console.log(contents)
 
     function handleTitleInput(e) {

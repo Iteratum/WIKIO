@@ -7,11 +7,11 @@ import { inputState, responseState } from "./store"
 export default function HandleSearchColumn() {
    
     const [searchInput, setSearchInput] = useState()
-    const [response, setResponse] = useRecoilState(responseState)
-    const [inputstatus, setInputstatus] = useRecoilState(inputState)
+    const [__, setResponse] = useRecoilState(responseState)
+    const [_, setInputstatus] = useRecoilState(inputState)
 
 
-    const baseURL = 'http://127.0.0.1:8000/search/'
+    const baseURL = 'https://wikiodjango.onrender.com/search/'
 
     
     /*useEffect(() => {
