@@ -22,7 +22,7 @@ export default function HandleRandomContent() {
     return(
         <div className="relative top-24">
             {randomDatas.map((randomData) => 
-            <div className="mx-4 shadow-2xl min-h-screen" key={ randomData.id }>
+            <div className="mx-4 min-h-screen" key={ randomData.id }>
                 <h1 className="text-3xl font-mono font-semibold max-lg:font-extrabold uppercase text-center">{ randomData.title }</h1>
                 <p className="text-lg font-medium">{ randomData.content }</p>
             </div>)}

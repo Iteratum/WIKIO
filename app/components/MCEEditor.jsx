@@ -1,19 +1,19 @@
 import React, { useRef } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
+import { useRecoilState } from "recoil"
+import { editorContentState } from "./store"
 
-export default function MCEEditor({ editorContent }) {
-  const editorRef = useRef(null);
+export default function MCEEditor() {
+  const [contents, setContents] = useRecoilState(editorContentState)
   const log = () => {
-    if (editorRef.current) {
-      const content = editorRef.current.getContent()
-      return editorContent(content)
-    }
+    const editorContent = tinymce.activeEditor.getContent()
+    setContents(editorContent)
+    
   };
   return (
     <>
-      <Editor onChange={ log }
-        apiKey='your-api-key'
-        onInit={(evt, editor) => editorRef.current = editor}
+      <Editor onKeyDown={ log }
+        apiKey='wawx9fnwoaq1x3wj0gq8h7amxvh6o99t37tdrdgmwt7bog7f'
         initialValue="<p>This is the initial content of the editor.</p>"
         init={{
           height: 500,

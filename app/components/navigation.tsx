@@ -1,7 +1,6 @@
 import type { LinksFunction } from "@remix-run/node";
 import { useState } from "react";
-import stylesheet from "~/tailwind.css";
-
+import stylesheet from "app/tailwind.css"
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -28,8 +27,8 @@ export default function NavigationRoute() {
                             <div className="ml-10 flex items-baseline space-x-4">
                                 <a href="/" className="hover:text-yellow-300 rounded-md px-3 py-2 text-xl font-bold">Home</a>
                                 <a href="/Indexes" className="hover:text-yellow-300 rounded-md px-3 py-2 text-xl font-bold">Indexes</a>
-                                <a href="/RandomContent" className="hover:text-yellow-300 rounded-md px-3 py-2 text-xl font-bold">Random Content</a>
-                                <a href="/NewPage" className="hover:text-yellow-300 rounded-md px-3 py-2 text-xl font-bold">New Page</a>
+                                <a href="/RandomContent" className="hover:text-yellow-300 rounded-md px-3 py-2 text-xl font-bold">Random</a>
+                                <a href="/NewPage" className="hover:text-yellow-300 rounded-md px-3 py-2 text-xl font-bold">Create +</a>
                             </div>
                         </div>
                         <div className="-mr-2 flex md:hidden">
@@ -53,8 +52,8 @@ function MobileMenu() {
             <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3 text-lg font-semibold">
               <a href="/" className="hover:bg-gray-700 hover:text-amber-500 block rounded-md px-3 py-2">Home</a>
               <a href="/Indexes" className="hover:bg-gray-700 hover:text-amber-500 block rounded-md px-3 py-2">Indexes</a>
-              <a href="/RandomContent" className="hover:bg-gray-700 hover:text-amber-500 block rounded-md px-3 py-2">Random Content</a>
-              <a href="/NewPage" className="hover:bg-gray-700 hover:text-amber-500 block rounded-md px-3 py-2">New Page</a>
+              <a href="/RandomContent" className="hover:bg-gray-700 hover:text-amber-500 block rounded-md px-3 py-2">Random</a>
+              <a href="/NewPage" className="hover:bg-gray-700 hover:text-amber-500 block rounded-md px-3 py-2">Create +</a>
             </div>
         </div>
     )
