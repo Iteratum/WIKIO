@@ -13,7 +13,7 @@ export default function HandleNewPage() {
         thumbnail: null,
     })
 
-    const [response, setResponse] = useState('')
+    const [response, setResponse] = useState()
 
     const baseURL = 'https://wikiodjango.onrender.com/newPage/'
     console.log(contents)

@@ -8,7 +8,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import NavigationRoute from "./components/navigation";
-import stylesheet from "../tailwind.css"
+import styles from "./tailwind.css"
 import { RecoilRoot } from "recoil";
 
 export const meta: MetaFunction = () => {
@@ -18,7 +18,7 @@ export const meta: MetaFunction = () => {
   ];
 }
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: styles },
 ];
 
 export default function App() {

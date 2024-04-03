@@ -1,10 +1,4 @@
-import type { LinksFunction } from "@remix-run/node";
 import { useState } from "react";
-import stylesheet from "app/tailwind.css"
-
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesheet },
-];
 
 export default function NavigationRoute() {
     const [menu, setMenu] = useState(true)
